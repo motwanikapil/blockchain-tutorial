@@ -1,0 +1,21 @@
+- bitcoin white paper
+- vitalk buerin ( developed etherium )
+- decentralized txns and decentralized agreements, decentralized organizations
+- smart contracts - it is a set of instructions executed in a decentralized way without the need for a centralized or third party intermediary.
+- smart contracts are available on bitcoin but they are turing incomplete as the people in bitcoin saw it as a store a value and people of ethereum saw it as a store of value as well as utility for smart contracts also.
+- blockchain can read and write the real world data which is known as oracle problem
+- they are deterministic systems
+- blockchain oracle: any device that interacts with the off-chain world to provide external data or computation to smart contracts.
+- but we can't keep single source of external data as we want our app to be truly decentralized
+- so we need decentralized oracle network
+- on chain data will be decentralized and off chain data fetching is also decentralized
+- on chain + off chain are known as hybrid smart contracts.
+- for hybrid smart contracts protocol named chainlink comes into play.
+- it is a modular decentralized oracle network
+- dapp or decentralized protocol or smart contract protocol or decentralized application
+- dapp is usually a combination of many smart contracts
+- web3: the permissionless web, with dynamic content. where decentralized censorship resistant networks run your agreement and code. it generally is accompanied by the idea of uesr owned eco systems, where the protocols you interact with you also own a portion of, instead solely being the product.
+- decentralized finance
+- daos - decentralized autonomous organizations
+- nfts are non fungible tokens
+- 
