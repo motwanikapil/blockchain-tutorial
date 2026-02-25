@@ -18,4 +18,15 @@
 - decentralized finance
 - daos - decentralized autonomous organizations
 - nfts are non fungible tokens
-- 
+- stable coins - its value matches to another asset ( 1 usdc = 1 dollar )
+- ownership of digital assets using blockchain
+- dao ( decentralized autonomous organizations )
+- every blockchain has a chain id
+- chainlink solves the oracle problem
+- blockchain is a shared ledger
+- oracle is a device which helps the blockchain to connect the real world 
+- in decentralized oracle network all the notes will come to an agreement for the same data ( for eg. weather at particular time)
+- chainlink vrf ( verfiable random function )
+- ethereum virtual machine ( evm ) ( os for smart contracts )
+- evm compatible ( most of the things are same but under the hood some changes are required in that blockchain)
+- evm equivalent ( it works exactly same as ethereum )
