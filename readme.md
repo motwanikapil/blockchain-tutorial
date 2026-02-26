@@ -30,3 +30,5 @@
 - ethereum virtual machine ( evm ) ( os for smart contracts )
 - evm compatible ( most of the things are same but under the hood some changes are required in that blockchain)
 - evm equivalent ( it works exactly same as ethereum )
+- the computational power your txn uses to be processed.
+- 
