@@ -31,4 +31,23 @@
 - evm compatible ( most of the things are same but under the hood some changes are required in that blockchain)
 - evm equivalent ( it works exactly same as ethereum )
 - the computational power your txn uses to be processed.
+- proof of work and proof of stake are the sybil attack resistance algorithms and which is part of the consensus algorithm.
+- bitcoin is a proof of work blockchain and ethereum is a proof of stake blockchain
+- andersworthbrown.com/blockchain
+- hash: a unique fixed length string, meant to identify a piece of data. they are created by placing said data into a "hash function".
+- ethereum uses keccack256 for hash function
+- 1 block contains - block no + nonce + data ( three things are hashed together )
+- now what miners need to do is that they need to find the value of nonce such that the hash string starts with 0000 because when it initially hash then we will get 4 zeroes for particular value of nonce and data.
+- first block of blockchain is known as genesis block
+- it contains previous hash and that hash doesn't exists
+- next block will contain the value of genesis block as prev ( similar to linked list )
+- the hash of block is made up of ( block no + nonce + data + prev hash )
+- mining- the process of finding the solution to the blockchain problem in our eg. the problem was to find a hash that start with four zeroes.
+- Nodes get paid for mining blocks
+- decentralized - no single point of authority
+- nonce means number used once to find the solution ( its another definition in ehtereum is to define the txn no. for an account/address)
+- when a miner solves one problem then it sends its block and then the other nodes verifies the block sent by the miner.
+- suppose two miners find the problem to solve at same time then the blockchain will split and the both the chains will continue and whichever will have more blocks in future that chain will be used and the other nodes will go to mempool ( a place which contains the nodes before they get added to blockchain )
+- after 6 confirmations comes for one block then that block is considered final.
+- take public key prepend 0x and apply keccack hashing and take last 40 characters that is ethereum wallet address.
 - 
