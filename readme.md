@@ -50,4 +50,11 @@
 - suppose two miners find the problem to solve at same time then the blockchain will split and the both the chains will continue and whichever will have more blocks in future that chain will be used and the other nodes will go to mempool ( a place which contains the nodes before they get added to blockchain )
 - after 6 confirmations comes for one block then that block is considered final.
 - take public key prepend 0x and apply keccack hashing and take last 40 characters that is ethereum wallet address.
-- 
+- in proof of stake nonce is not there instead the validator needs to sign the block
+- blocks are linked to previous block thro' signing
+- validators take turns to propose blocks to be added
+- validators are pseudo-randomly selected using algorithm named rando
+- validator can propose blocks every 12 seconds ( 12 second period of time is known as slot )
+- every 32 slots are known as epoch ( 6.4 min )
+- group of validators which validate the block are known as committee
+- if 2/3 agree then it is added to the chain
