@@ -1,0 +1,68 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18; // this is the solidity version
+
+contract SimpleStorage {
+    // Basic types: boolean, uint ( unsigned integer ), int (signed whole number), address, bytes
+    // bool hasFavoriteNumber = true;
+    // uint favoriteNumber = 88;
+    // uint256 favoriteNumber1 = 88; // 256 bits and default is also uint256
+    // int256 anotherFavoriteNumber = 12;
+    // string favoriteNumberInText = "88";
+    // address myAddress = 
+    // bytes32 favoriteBytes32 = "cat"; // bytes32 and bytes are not same , under the hood string is working
+    // using bytes
+
+    // uint256 favoriteNumber = 5;
+    // default visibility is internal
+    // uint256 internal favoriteNumber;
+    // uint256 public favoriteNumber; // by default 0
+    uint256 myFavoriteNumber; // by default 0
+    // writing public for a number is similar to making a getter function for a variable
+
+    // uint256[] listOfFavoriteNumbers;
+
+    struct Person {
+        uint256 favoriteNumber;
+        string name;
+    }
+
+    // the below is the dynamic array
+    Person[] public listOfPeople; 
+    // Person[10] public listOfPeople; // list of 10 elements
+
+    // Person public myFriend = Person(7, "Kapil");
+    // Person public kapil = Person({
+    //     favoriteNumber: 7,
+    //     name: "Kapil"
+    // });
+
+    // Person public mariah = Person({
+    //     favoriteNumber: 10,
+    //     name: "Mariah"
+    // });
+
+    // Person public john = Person({
+    //     favoriteNumber: 10,
+    //     name: "John"
+    // });
+
+
+
+    function store(uint256 _favoriteNumber) public {
+        myFavoriteNumber = _favoriteNumber;
+        // favoriteNumber = favoriteNumber + 1;
+
+    }
+    // functions marked with view or pure are only reading the blockchain state
+    // pure function is that its return value never changes
+    function retrieve() public view returns(uint256){
+        return myFavoriteNumber;
+    }
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        listOfPeople.push(Person({
+            name: _name,
+            favoriteNumber: _favoriteNumber
+        }));
+    }
+}

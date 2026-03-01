@@ -58,3 +58,7 @@
 - every 32 slots are known as epoch ( 6.4 min )
 - group of validators which validate the block are known as committee
 - if 2/3 agree then it is added to the chain
+
+1/3/26
+- a blockchain or protocol upgrade is a co-ordinated changes to the rules that govern how ethereum works
+- upgrade to ethereum chain starts with ethereum improvement proposal ( eip )
