@@ -62,3 +62,16 @@
 1/3/26
 - a blockchain or protocol upgrade is a co-ordinated changes to the rules that govern how ethereum works
 - upgrade to ethereum chain starts with ethereum improvement proposal ( eip )
+
+2/3/26
+- eip ( ethereum improvement proposal )
+- erc ( ethereum request for comment ) - it proposes standards for how applicatoins on ethereum should work together
+- all erc are eip but all eip are not erc
+- erc165 - standard interface detection
+- eip1559 - 
+- ethereum is turing complete with some caveats
+- with unlimited computational power it can solve any problem that a computer can solve.
+- gas fees = (base fees + priority fees)
+- if block is 50% full then after that base fees increases and when it is less than 50% full then base fees decreases 
+- priority fee is like a tip which will be given to the node validator
+- 1 eth = 10^9 GWEI = 10^18 WEI

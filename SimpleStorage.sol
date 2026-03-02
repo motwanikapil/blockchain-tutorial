@@ -28,6 +28,9 @@ contract SimpleStorage {
 
     // the below is the dynamic array
     Person[] public listOfPeople; 
+
+    // chelesa => 232
+    mapping(string => uint256) public nameToFavoriteNumber;
     // Person[10] public listOfPeople; // list of 10 elements
 
     // Person public myFriend = Person(7, "Kapil");
@@ -59,10 +62,23 @@ contract SimpleStorage {
         return myFavoriteNumber;
     }
 
+    // evm can read and write to stack, memory, storage, calldata
+    // by default variables are stored in memory
+    // for specifically strings we need to specify calldata or memory and it shows that the variables
+    // are temporary variables
+    // memory data is mutable and calldata variable is not mutable and storage are permanent variables
+    // that can be modified.
+    // if we create variable outside the function then it is implicitly stored as storage variable
+    // we need to specify this for array, struct or mapping types 
+    // we can't specify storage for function parameters because solidity knows that it is a temporary
+    // variables
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
         listOfPeople.push(Person({
             name: _name,
             favoriteNumber: _favoriteNumber
         }));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
+
+
 }
