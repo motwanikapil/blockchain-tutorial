@@ -75,3 +75,40 @@
 - if block is 50% full then after that base fees increases and when it is less than 50% full then base fees decreases 
 - priority fee is like a tip which will be given to the node validator
 - 1 eth = 10^9 GWEI = 10^18 WEI
+
+3/3/26
+- account abstraction
+	- two types of accounts
+	 - externally owned account ( controlled by wallet like metamask )
+	 - smart contract accounts ( controlled by smart contracts and works based on the smart contract code )
+	  - funds to these accounts can be sent using smart contract address.
+	  - only eoa accounts can initiate transactions.
+	  - eoa can inititate txns but can't be programmed
+	  - sca can be programmed but can't initiate txns
+	  - solution to this is account abstraction
+	 - eoa
+	  - dependent on private key security
+	  - requires funds to pay gas fees
+	  - sign every txn individually
+	 - smart wallets
+	  - guardians can support with wallet recovery
+	  - paymasters pay gas fees for you
+	  - sign txns in batches
+	  - session keys
+	  - can require multiple txns
+	 - the current implementation is specified in eip-4337
+	  - this works without actually changing how ethereum works.
+	  - we first create user operations and then we send it to bundlers ( special kind of validators )
+	  - also we send the txns to alt mempool
+	  - now from mempool these txns are sent to entry point contract
+	  - and then it is sent to mainnet
+	  - wallets which provide account abstraction are safe and argent
+	  - developers also can develop this using alchemy, pimlico and biconomy
+	 - temporary smart wallets
+	  - if we want account abstraction using eoa for single txns we can use eip 7702
+	    - in this we delegate the execution of the txn to some smart contract
+	    - in this first we sign a message that I want to use a special smart contract to execute my txn.
+	    - eg. if we want to swap tokens and then send the swapped token to friend in one go
+	    - we can use batch txn smart contract so it will perform these actions for us 
+	    - in 7702 type 4 txns are used.
+	    - this smart contract handle common use cases like batch txns, flexible gas payments, smoother security
