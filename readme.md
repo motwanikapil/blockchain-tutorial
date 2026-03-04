@@ -112,3 +112,38 @@
 	    - we can use batch txn smart contract so it will perform these actions for us 
 	    - in 7702 type 4 txns are used.
 	    - this smart contract handle common use cases like batch txns, flexible gas payments, smoother security
+	  - defi
+	  	- lend money to strangers around the world
+	  - token can represents
+	  	- currencies
+	  	- ownership rights etc.
+	  - in general tokens are managed by caveat of native tokens
+	  -   ercs defines how smart contracts should be written and how it should work for specific use case.
+	  - several diff categories tokens
+	  	- native tokens
+	  	  - not created by smart contracts
+	  	  - bitcoin ( btc )
+	  	  - ethereum ( eth )
+	  	- token holders have voting powers to be able to vote on protocol upgrades and changes.
+	  	- native tokens are fungible tokens
+	  	- fungible tokens can also be created using smart contracts which follows erc-20 standard.
+	  	- these includes examples like stable coins ( usdc ), utility tokens ( link tokens )
+	  	- governance tokens ( voting rights ( uni tokens ))
+	  	- reward tokens
+	  	- fungible tokens are divisible
+	  - they are programmable also
+	  - non-fungible tokens ( not interchangable )
+	   - digital certificate of authenticity
+	   - not divisible
+	   - managed by smart contracts erc-721
+	  - semi fungible tokens
+	   - multiple tokens can exist for one token id 
+	   	- for eg digital prints of unique nft
+	   - erc-1155 is used for standard for semi fungible tokens
+	   - convert real world things to tokens is known as tokenization of real world assets ( RWAs )
+	   - coinbase, binance, curve, uniswap
+	  - die stable coin, usdc stable coin ( controlled by gov. )
+
+4/3/26
+- the smart contracts can interact with other contracts easily is known as composability
+- 
