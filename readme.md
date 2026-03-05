@@ -146,4 +146,54 @@
 
 4/3/26
 - the smart contracts can interact with other contracts easily is known as composability
-- 
+
+5/3/26
+- centralized exchanges ( coinbase, binance )
+
+- onramp - convert local currency to crypto
+- offramp - convert crypto to local currency
+- fundamentals of zero knowledge proofs ( course )
+
+- decentralized exchanges ( dex )
+ - uniswap is the largest dex
+ - dex uses automatic market makers
+  - that means it works based on liquidity pools
+  - someone who is providing tokens are known as liquidity provider
+  - when people buy eth more so eth prices goes up and vice versa ( based on how much eth is in liquidity pool )
+  - after blockchain learn wallet security courses
+  - learn advanced foundry course
+ - for concert tickets usecases erc1155 should be used
+ - dex aggregator 1inch or matcha
+
+ - etheum mainnet layer 1 ( l1 )
+ - sepolia testnet layer 1 ( l1 )
+ - zksync mainnet layer2 ( l2 ) rollup
+ - zksync sepolia testnet layer 2 ( l2 ) rollup
+ - l1 is the blockchain in its purest form
+ - contribute to sybil resistance
+ - help the chain reach consensus
+
+ - anything that hooks back into ethereum that is layer 2
+ - layer 2 is built on layer 1
+ - apps deployed on layer 1 are not considered l2
+ - l2 are roll ups
+ - l2 rollups are blockchain scaling solutions
+ - increase the amt of txns without increasing the gas costs
+ - blockchain trilema ( it is said that blockchain can have 2 out of 3 properties ) ( decentralized, secure and scalability )
+
+- etheruem can process 15 txns / sec
+- 2 types of rollups
+ - optimistic rollup
+  - assume txns are valid and then there will be challenge time 
+  - in challenge time they compute called a fraud proof
+  - if fraud proof wins then the operator is penalised and batch of txns are executed again
+ - second type of rollup is zk rollup
+ - zk rollups allow you to prove something
+ - state transitions and computations are correctly
+ - it involves 2 participants one is prover ( code generates a proof ) and other is verifier ( contract on l1 )
+ - succicint rollups
+ - zk zk rollups ( gives privacy ) and hides info ( aztec ) ( maintains zero knowledge proofs )
+  - secret balances
+  - secret txns
+  - hide your address
+ - zk rollups are used to verify the validaty of txns in succint, quick and efficient way.
