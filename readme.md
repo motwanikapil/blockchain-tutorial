@@ -197,3 +197,43 @@
   - secret txns
   - hide your address
  - zk rollups are used to verify the validaty of txns in succint, quick and efficient way.
+
+6/3/26
+- currently there are single central sequencer in rollup
+ - so there are risks of censorship
+ - reliability is also less
+ - stages of chain is categorization based on vitalix proposed milestones
+ - it is an opinionated assessment on the maturity of the rollup by the l2 beat team.
+ - its purpose is to create incentive for projects to work towards decentralization
+ - stage 0: full training wheels
+ 	- centralized management
+ 	- security council make decisions
+ 	- open source software for data availability (data available to verify a block is available to all n/w participants)
+ 	- user can exit within 7 days with coordination
+ - stage 1: enhanced rollup governance
+  	- governed by smart contracts
+  	- security council for bug resolution
+  	- enhanced rollup governance
+  	- decen fraud/validity proof system.
+  	- user can exit within 7 days without coordination
+  - stage 2: no training wheels
+   	- smart contracts fully manage the rollup
+   	- fraud/proof validity is completely permissionless
+   	- user is given ample time to exit
+
+- bridging
+ - 2 types of bridging
+ 	1. locking and unlocking ( in source chain tokens are locked in smart contract and in desination chain it is unlocked )
+ 	2. burning and minting ( in source chain the tokens are burnt and in the destination chain they are minted and brought back to existence )
+- 13 minutes for finality of block on ethereum
+- 21 hours for finality of block of zksync
+
+- blockchain can't interact with real world data and events because they are deterministic
+- also known as oracle problem
+- blockchain oracle interacts with off chain logic
+- chainlink is a decentralized oracle network
+
+- chainlink features
+ - chainlink data feeds ( data.chain.link )
+ - docs.chain.link
+ - faucets.chain.link ( for faucets )
